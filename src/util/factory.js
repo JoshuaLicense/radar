@@ -21,7 +21,7 @@ const ExceptionMessages = require('./exceptionMessages')
 const GoogleAuth = require('./googleAuth')
 const config = require('../config')
 const featureToggles = config().featureToggles
-const { getDocumentOrSheetId, getSheetName } = require('./urlUtils')
+const { getDocumentOrSheetId, getDefaultSheetId, getSheetName } = require('./urlUtils')
 const { getGraphSize, graphConfig, isValidConfig } = require('../graphing/config')
 const InvalidConfigError = require('../exceptions/invalidConfigError')
 const InvalidContentError = require('../exceptions/invalidContentError')
@@ -326,7 +326,7 @@ const Factory = function () {
 
     const domainName = DomainName(window.location.search.substring(1))
 
-    const paramId = getDocumentOrSheetId()
+    const paramId = getDefaultSheetId()
     if (paramId && paramId.endsWith('.csv')) {
       sheet = CSVDocument(paramId)
       sheet.init().build()

@@ -19,6 +19,10 @@ function getDocumentOrSheetId() {
   return queryParams.documentId ?? queryParams.sheetId
 }
 
+function getDefaultSheetId() {
+  return 'https://raw.githubusercontent.com/thoughtworks/build-your-own-radar/master/spec/end_to_end_tests/resources/sheet.csv'
+}
+
 function getSheetName() {
   const queryParams = QueryParams(window.location.search.substring(1))
   return queryParams.sheetName
@@ -27,5 +31,6 @@ function getSheetName() {
 module.exports = {
   constructSheetUrl,
   getDocumentOrSheetId,
+  getDefaultSheetId,
   getSheetName,
 }
