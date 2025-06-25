@@ -20,7 +20,7 @@ function getDocumentOrSheetId() {
 }
 
 function getDefaultSheetId() {
-  return 'https://raw.githubusercontent.com/thoughtworks/build-your-own-radar/master/spec/end_to_end_tests/resources/sheet.csv'
+  return 'https://raw.githubusercontent.com/JoshuaLicense/radar/main/sample.json'
 }
 
 function getSheetName() {
