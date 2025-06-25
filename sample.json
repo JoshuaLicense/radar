@@ -9,21 +9,21 @@
   {
     "name": "Another thing",
     "ring": "Adopt",
-    "quadrant": "Techniques",
+    "quadrant": "Tools",
     "isNew": "FALSE",
     "description": "This is a description of another thing that is not new but still in the techniques quadrant."
   },
   {
     "name": "A third thing",
     "ring": "Trial",
-    "quadrant": "Techniques",
+    "quadrant": "Platforms",
     "isNew": "TRUE",
     "description": "This is a description of a third thing that is new and in the trial quadrant."
   },
   {
     "name": "A fourth thing",
     "ring": "Trial",
-    "quadrant": "Techniques",
+    "quadrant": "Languages & Frameworks",
     "isNew": "FALSE",
     "description": "This is a description of a fourth thing that is not new but still in the trial quadrant."
   },
@@ -44,14 +44,14 @@
   {
     "name": "A seventh thing",
     "ring": "Hold",
-    "quadrant": "Techniques",
+    "quadrant": "Languages & Frameworks",
     "isNew": "TRUE",
     "description": "This is a description of a seventh thing that is new and in the hold quadrant."
   },
   {
     "name": "An eighth thing",
     "ring": "Hold",
-    "quadrant": "Techniques",
+    "quadrant": "Tools",
     "isNew": "FALSE",
     "description": "This is a description of an eighth thing that is not new but still in the hold quadrant."
   }

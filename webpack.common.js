@@ -19,10 +19,11 @@ const common = ['./src/common.js']
 const ASSET_PATH = process.env.ASSET_PATH || '/radar'
 
 const plugins = [
-  new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+  new MiniCssExtractPlugin({ filename: 'radar/[name].[contenthash].css' }),
   new HtmlWebpackPlugin({
     template: './src/index.html',
     chunks: ['main'],
+    publicPath: ASSET_PATH,
     inject: 'body',
   }),
   new webpack.DefinePlugin({
