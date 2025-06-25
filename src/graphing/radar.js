@@ -780,7 +780,6 @@ const Radar = function (size, radar) {
       renderSearch(radarHeader, quadrants)
       renderAlternativeRadars(radarFooter, alternatives, currentSheet)
       renderQuadrantTables(quadrants, rings)
-      renderButtons(radarFooter)
 
       const landingPageElements = document.querySelectorAll('main .home-page')
       landingPageElements.forEach((elem) => {
@@ -788,7 +787,6 @@ const Radar = function (size, radar) {
       })
     } else {
       plotRadarHeader()
-      plotRadarFooter()
       if (alternatives.length) {
         plotAlternativeRadars(alternatives, currentSheet)
       }

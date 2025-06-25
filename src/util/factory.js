@@ -350,8 +350,6 @@ const Factory = function () {
         plotBanner(content, bannerText)
 
         plotForm(content)
-
-        plotFooter(content)
       }
 
       setDocumentTitle()
@@ -378,7 +376,6 @@ function plotLoading(content) {
     var bannerText =
       '<h1>Building your radar...</h1><p>Your Technology Radar will be available in just a few seconds</p>'
     plotBanner(content, bannerText)
-    plotFooter(content)
   } else {
     document.querySelector('.helper-description > p').style.display = 'none'
     document.querySelector('.input-sheet-form').style.display = 'none'
@@ -452,8 +449,6 @@ function plotErrorMessage(exception, fileType) {
 
     d3.selectAll('.loading').remove()
     plotError(exception, fileType)
-
-    plotFooter(content)
   }
 }
 
